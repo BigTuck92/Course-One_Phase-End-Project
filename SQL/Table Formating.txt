@@ -6,11 +6,12 @@ create table Meetings(
 );
 
 // Configure Table: Clients 
+// Relate table to Table: Meetings through (mid)
 create table Clients(
     cid int PRIMARY KEY AUTO_INCREMENT,
     Client_Name varchar(256),
     Client_Email varchar(256) UNIQUE,
-    Client_Password varchar(256),
+    Client_Password varchar(256) DEFAULT 'Password123',
     mid int,
     CONSTRAINT fk_meetings_clients FOREIGN KEY (mid)
     REFERENCES Meetings(mid)
