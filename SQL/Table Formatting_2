@@ -34,3 +34,16 @@ insert into clients values(null, 'Kim', 'kim@project.com', 'Password123');
 insert into clients values(null, 'Leo', 'leo@project.com', 'Password123');
 insert into clients values(null, 'Mike', 'mike@project.com', 'Password123');
 insert into clients values(null, 'Fionna', 'fionna@project.com', 'Password123');
+
+// Populate Table: Attendance
+insert into Attendance values(1, 1);
+insert into Attendance values(1, 2);
+insert into Attendance values(2, 3);
+insert into Attendance values(2, 1);
+insert into Attendance values(3, 2);
+insert into Attendance values(3, 3);
+insert into Attendance values(4, 1);
+insert into Attendance values(4, 2);
+insert into Attendance values(5, 3);
+insert into Attendance values(6, 1);
+insert into Attendance values(7, 2);
