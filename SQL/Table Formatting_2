@@ -25,3 +25,12 @@ create table Attendance(
 insert into meetings values(null, 'New Client Orientation', '2024-05-13 14:30:00');
 insert into meetings values(null, 'New Supplier Introduction', '2024-05-14 13:45:00');
 insert into meetings values(null, 'KPI Review', '2024-05-15 09:00:00');
+
+// Populate Table: Clients
+insert into clients values(null, 'Jake', 'jake@project.com', 'Password123');
+insert into clients values(null, 'Sia', 'sia@project.com', 'Password123');
+insert into clients values(null, 'George', 'george@project.com', 'Password123');
+insert into clients values(null, 'Kim', 'kim@project.com', 'Password123');
+insert into clients values(null, 'Leo', 'leo@project.com', 'Password123');
+insert into clients values(null, 'Mike', 'mike@project.com', 'Password123');
+insert into clients values(null, 'Fionna', 'fionna@project.com', 'Password123');
