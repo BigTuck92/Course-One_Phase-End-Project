@@ -10,8 +10,7 @@ create table Clients(
     cid int PRIMARY KEY AUTO_INCREMENT,
     Client_Name varchar(256),
     Client_Email varchar(256),
-    Client_Password varchar(256),
-    mid int,
+    Client_Password varchar(256)
 );
 
 // Create Table: Attendance
@@ -19,5 +18,10 @@ create table Attendance(
     cid int,
     mid int,
     CONSTRAINT fk_attendance_meetings FOREIGN KEY (mid) REFERENCES Meetings(mid),
-    CONSTRAINT fk_attendance_clients FOREIGN KEY (mid) REFERENCES Clients(cid)
+    CONSTRAINT fk_attendance_clients FOREIGN KEY (cid) REFERENCES Clients(cid)
 );
+
+// Populate Table: Meetings
+insert into meetings values(null, 'New Client Orientation', '2024-05-13 14:30:00');
+insert into meetings values(null, 'New Supplier Introduction', '2024-05-14 13:45:00');
+insert into meetings values(null, 'KPI Review', '2024-05-15 09:00:00');
