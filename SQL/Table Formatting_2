@@ -1,0 +1,23 @@
+// Create Table: Meetings
+create table Meetings(
+    mid int PRIMARY KEY AUTO_INCREMENT,
+    Topic varchar(256),
+    Scheduled DATETIME
+);
+
+// Create Table: Clients
+create table Clients(
+    cid int PRIMARY KEY AUTO_INCREMENT,
+    Client_Name varchar(256),
+    Client_Email varchar(256),
+    Client_Password varchar(256),
+    mid int,
+);
+
+// Create Table: Attendance
+create table Attendance(
+    cid int,
+    mid int,
+    CONSTRAINT fk_attendance_meetings FOREIGN KEY (mid) REFERENCES Meetings(mid),
+    CONSTRAINT fk_attendance_clients FOREIGN KEY (mid) REFERENCES Clients(cid)
+);
