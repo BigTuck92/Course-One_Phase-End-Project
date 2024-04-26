@@ -47,3 +47,9 @@ insert into Attendance values(4, 2);
 insert into Attendance values(5, 3);
 insert into Attendance values(6, 1);
 insert into Attendance values(7, 2);
+
+// Join Query
+select clients.client_name, meetings.topic, meetings.Scheduled
+from clients
+Join Attendance on clients.cid = Attendance.cid
+Join Meetings on meetings.mid = Attendance.mid;
