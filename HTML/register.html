@@ -1,0 +1,47 @@
+<!-- This is the client registration page -->
+<!DOCTYPE html>
+<html>
+    <!-- Define list styling for the menu bar -->
+    <head>
+        <style>
+            ul {
+                list-style-type: none;
+            }
+            li {
+                float: left;
+                margin-right: 10px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- Title Line -->
+        <center>
+            <h1>Architecture by Anna</h1>
+            <h3>New Client Registration</h3>
+            <hr>
+        </center>
+
+        <!-- Menu Bar -->
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+        <br><hr>
+
+        <!-- New client registration form -->
+        <center>
+            <p>Please fill out the following to register as a new client:</p>
+            <form action="" method="get">
+                <label for="name"><b>Name:</b></label><br>
+                <input type="text" id="name" name="name" placeholder="Enter Full Name" required><br><br>
+                <label for="email"><b>Email:</b></label><br>
+                <input type="text" id="email" name="email" placeholder="abc123@example.com" required><br><br>
+                <label for="password"><b>Choose a Password:</b></label><br>
+                <input type="text" id="password" name="password" placeholder="Minimum 8 Characters" required><br><br>
+                <label for="rePassword"><b>Re-Enter Password:</b></label><br>
+                <input type="text" id="rePassword" name="rePassword" placeholder="Passwords Must Match" required><br><br>
+                <input type="submit" value="Submit"> <input type="reset" value="Clear Form">
+            </form>
+        </center>
+    </body>
+</html>
