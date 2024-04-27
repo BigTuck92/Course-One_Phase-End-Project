@@ -32,12 +32,16 @@
         <center>
             <p>Please fill out the following form to submit a meeting schedule request:</p><br>
 
-            <label for="topic"><b>Meeting Topic:</b></label><br>
-            <input type="text" id="topic" name="topic" placeholder="i.e. New Project" required><br><br>
-            <label for="attendance"><b>Projected Attendance:</b></label><br>
-            <input type="text" id="attendance" name="attendance" placeholder="Estimated Number" required><br><br>
-            <label for="dateTime"><b>Schedule For:</b></label><br>
-            <input type="datetime-local" id="dateTime" name="dateTime" required><br><br>
+            <form action="" method="get">
+                <label for="topic"><b>Meeting Topic:</b></label><br>
+                <input type="text" id="topic" name="topic" placeholder="i.e. New Project" required><br><br>
+                <label for="attendance"><b>Projected Attendance:</b></label><br>
+                <input type="text" id="attendance" name="attendance" placeholder="Estimated Number" required><br><br>
+                <label for="dateTime"><b>Schedule For:</b></label><br>
+                <input type="datetime-local" id="dateTime" name="dateTime" required><br><br>
+                <input type="submit" value="Submit"> <input type="reset" value="Clear Form">
+            </form>
+
         </center>
     </body>
 </html>
