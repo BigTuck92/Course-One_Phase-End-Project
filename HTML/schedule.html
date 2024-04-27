@@ -1,0 +1,43 @@
+<!-- This is the meeting schedule page -->
+<!DOCTYPE html>
+<html>
+    <!-- Define list styling for the menu bar -->
+    <head>
+        <style>
+            ul {
+                list-style-type: none;
+            }
+            li {
+                float: left;
+                margin-right: 10px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- Title Line -->
+        <center>
+            <h1>Architecture by Anna</h1>
+            <h3>Scheduling</h3>
+            <hr>
+        </center>
+
+        <!-- Menu Bar -->
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+        <br><hr>
+
+        <!-- Meeting Schedule Form -->
+        <center>
+            <p>Please fill out the following form to submit a meeting schedule request:</p><br>
+
+            <label for="topic"><b>Meeting Topic:</b></label><br>
+            <input type="text" id="topic" name="topic" placeholder="i.e. New Project" required><br><br>
+            <label for="attendance"><b>Projected Attendance:</b></label><br>
+            <input type="text" id="attendance" name="attendance" placeholder="Estimated Number" required><br><br>
+            <label for="dateTime"><b>Schedule For:</b></label><br>
+            <input type="datetime-local" id="dateTime" name="dateTime" required><br><br>
+        </center>
+    </body>
+</html>
