@@ -20,18 +20,29 @@
     </div>
 
     <!-- Nav bar -->
-    <ul class="nav">
-        <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="schedule.html">Schedule</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="register.html">Registration</a>
-        </li>
-    </ul>
-    <br>
+    <nav class="navbar" style="background-color: #f1c78f;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navigation</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="schedule.html"><b>Scheduling</b></a>
+              </li>
+              <hr>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Return to Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="register.html">New Client Registration</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <br>
 
     <!-- Meeting Schedule Form -->
     <div class="form">
@@ -45,7 +56,7 @@
                 required><br><br>
             <label for="dateTime"><b>Schedule For:</b></label><br>
             <input class="input" type="datetime-local" id="dateTime" name="dateTime" required><br><br>
-            <input class="button" type="submit" value="Submit"> <input class="button" type="reset" value="Clear">
+            <input class="btn btn-outline-secondary" type="submit" value="Submit"> <input class="btn btn-outline-secondary" type="reset" value="Clear">
         </form>
     </div>
 
