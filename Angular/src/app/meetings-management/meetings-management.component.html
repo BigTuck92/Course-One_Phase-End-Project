@@ -1,0 +1,54 @@
+<main class="gridTemplate">
+    <header>
+        <h1>Welcome to Meeting Management</h1>
+    </header>
+
+    <div class="intro">
+        <h3>Please select your desired action:</h3><br>
+
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="false"
+                (change)="NewMeetingForm()">
+            <label class="form-check-label" for="inlineRadio1">Create New Meeting</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"
+                (change)="MeetingListView()">
+            <label class="form-check-label" for="inlineRadio2">View Existing Meetings</label>
+        </div>
+
+    </div>
+
+    <div class="form" *ngIf="showMeetingCreate">
+        <form method="post" [formGroup]="meetingsForm" (ngSubmit)="addMeetingToDB">
+            <div>
+                <h5>Please Enter New Meeting Information:</h5>
+                <hr>
+            </div>
+            <div class="mb-3">
+                <label for="topic" class="form-label">Meeting Topic</label>
+                <input type="text" class="form-control" id="topic" aria-describedby="emailHelp"
+                    placeholder="eg: 'John'" required>
+            </div>
+            <div class="mb-3">
+                <label for="dateTime" class="form-label">Schedule Date and Time</label>
+                <input type="datetime-local" class="form-control" id="dateTime" aria-describedby="emailHelp"
+                    placeholder="eg: 'john@example.com'" required>
+            </div>
+            <input type="button" class="btn btn-primary" value="Submit"><input type="reset" class="btn btn-primary"
+                value="Reset">
+        </form>
+    </div>
+
+    <div class="form clientList" *ngIf="showMeetingList">
+        <div>
+            <h5>Current Client List:</h5>
+            <hr>
+        </div>
+        <div>
+            <p *ngFor="let Meeting of meetings">
+                {{Meeting.mid}} | {{Meeting.topic}} | {{Meeting.dateTime}}
+            </p>
+        </div>
+    </div>
+</main>

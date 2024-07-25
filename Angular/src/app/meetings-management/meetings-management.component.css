@@ -1,0 +1,76 @@
+h1, h3{
+    text-align: center;
+}
+
+.gridTemplate{
+    display: grid;
+    grid-template-columns: 10px 1fr 1fr 10px;
+    grid-template-areas:
+        "header header header header"
+        "intro intro intro intro"
+        ". form form ."
+}
+
+header { 
+    background-color: black;
+    color: white;
+    grid-area: header;
+}
+
+.intro {
+    grid-area: intro;
+    text-align: center;
+}
+
+.form {
+    grid-area: form;
+    margin: 5rem;
+}
+
+.btn{
+    margin: 1em;
+}
+
+body {
+    height: 100%;
+  }
+  
+  .form-signin {
+    max-width: 330px;
+    padding: 1rem;
+  }
+  
+  .form-signin .form-floating:focus-within {
+    z-index: 2;
+  }
+  
+  .form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  
+  .form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+form {
+  background-color: bisque;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 1rem 0px rgb(0, 0, 0);
+}
+
+.clientList {
+  background-color: bisque;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 1rem 0px rgb(0, 0, 0);
+}
+
+input {
+  border-width: 1px;
+  border-color: black;
+}
