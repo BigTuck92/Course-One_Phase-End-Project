@@ -1,0 +1,40 @@
+/* This declaration defines the background of the entire web app */
+.body {
+    background-color: rgb(0, 0, 0);
+}
+
+/* This declaration defines the "Title" class */
+.title {
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    background-color: bisque;
+}
+
+/* This declaration defines the "Form" class */
+.form {
+    text-align: center;
+    width: 25%;
+    padding: 16px;
+    background-color: rgb(243, 234, 181);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.8);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* This declaration defines the "Input" class */
+.input {
+    width: 90%;
+    display: inline;
+    background-color: rgb(213, 237, 245);
+    border: 2px solid black;
+    border-radius: 6px;
+    box-sizing: content-box;
+}
+
+/* This declaration defines the "Button" class */
+.btn-outline-secondary {
+    width: 40%;
+    display: inline;
+    margin: 5px;
+}
